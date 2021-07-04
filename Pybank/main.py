@@ -1,4 +1,4 @@
-# import os and csv modules
+# import csv module
 import csv
 
 # create emty lists to add hold the values
@@ -6,9 +6,6 @@ import csv
 month_count = []
 profit_list = []
 profit_change_list = []
-
-
-
 
 # set file path
 
@@ -54,7 +51,7 @@ print(f"Average  Change: ${round(sum(profit_change_list)/int(len(month_count)),2
 print(f"Greatest Increase in Profits: {month_count[increase_index]} (${(str(max_profit_increase))})")
 print(f"Greatest Decrease in Profits: {month_count[decrease_index]} (${(str(min_profit_decrease))})")
 
-# outfile
+# output file
 budgetoutput_filepath = "../Resources/Analysis.txt"
 with open(budgetoutput_filepath, 'w') as Analysistxt:
     Analysistxt.write("Financial Analysis")
