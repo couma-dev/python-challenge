@@ -1,7 +1,7 @@
 # import csv module
 import csv
 
-# create emty lists to add hold the values
+# create empty lists to add hold the values for month count, profit and profit change
 
 month_count = []
 profit_list = []
