@@ -52,7 +52,7 @@ print(f"Greatest Increase in Profits: {month_count[increase_index]} (${(str(max_
 print(f"Greatest Decrease in Profits: {month_count[decrease_index]} (${(str(min_profit_decrease))})")
 
 # output file
-budgetoutput_filepath = "../Resources/Analysis.txt"
+budgetoutput_filepath = "../Analysis/Analysis.txt"
 with open(budgetoutput_filepath, 'w') as Analysistxt:
     Analysistxt.write("Financial Analysis")
     Analysistxt.write("\n")
