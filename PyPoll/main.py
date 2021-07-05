@@ -1,14 +1,17 @@
+
+#import dependencies
 import csv
 
-
-import csv
-
-#create empty lists and and dictionaries assign to variables to store our calculations.
-
+#create empty dictionary, this will hold candindates names (key): and candidates votes value:
+#create empty list to hold candidates names
+#create emptly to hold candidates votes
+#set Total vote count to zero (o)
+#create empty list to hold winner info
 poll_data = {}
 Candidates = []
 Votes = []
 Total_votes_cast = 0
+election_winner = []
 
 
 # set filepath
@@ -24,9 +27,23 @@ with open(filepath, 'r') as electioncsv:
 
     electionheader = next (electioncsv)
 
-    #count total votes cast 
+    #count total votes cast by iterating through the election data
     for row in electionreader:
         Total_votes_cast +=1
 
 print(Total_votes_cast)
+
+
+# print election results.
+print("Election Results")
+print("---------------------------")
+print(f"Total Votes: {Total_votes_cast}")
+print("---------------------------")
+print("")
+print()
+print()
+print()
+print("Winner: {}")
+
+#Write election results to output file
 
