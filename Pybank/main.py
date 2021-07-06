@@ -54,16 +54,10 @@ print(f"Greatest Decrease in Profits: {month_count[decrease_index]} (${(str(min_
 # output file
 budgetoutput_filepath = "../Analysis/Analysis.txt"
 with open(budgetoutput_filepath, 'w') as Analysistxt:
-    Analysistxt.write("Financial Analysis")
-    Analysistxt.write("\n")
-    Analysistxt.write("-------------------------------")
-    Analysistxt.write("\n")
-    Analysistxt.write(f"Total Months: {len(month_count)}")
-    Analysistxt.write("\n")
-    Analysistxt.write(f"Total: {sum(profit_list)}")
-    Analysistxt.write("\n")
-    Analysistxt.write(f"Average  Change: ${round(sum(profit_change_list)/int(len(month_count)),2)}")
-    Analysistxt.write("\n")
-    Analysistxt.write(f"Greatest Increase in Profits: {month_count[increase_index]} (${(str(max_profit_increase))})")
-    Analysistxt.write("\n")
+    Analysistxt.write("Financial Analysis\n")
+    Analysistxt.write("-------------------------------\n")
+    Analysistxt.write(f"Total Months: {len(month_count)}\n")
+    Analysistxt.write(f"Total: {sum(profit_list)}\n")
+    Analysistxt.write(f"Average  Change: ${round(sum(profit_change_list)/int(len(month_count)),2)}\n")
+    Analysistxt.write(f"Greatest Increase in Profits: {month_count[increase_index]} (${(str(max_profit_increase))})\n")
     Analysistxt.write(f"Greatest Decrease in Profits: {month_count[decrease_index]} (${(str(min_profit_decrease))})")
